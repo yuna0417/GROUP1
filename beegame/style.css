@@ -1,0 +1,126 @@
+#app{
+    position: absolute;
+    width: 1000px;
+    height: 562px;
+}
+
+#bee{
+    position: absolute;
+    width: 40px;
+    left: 10px;
+    top:50%;
+}
+
+#dragonfly{
+    position: absolute;
+    width: 180px;
+    left: 15%;
+    top: 68%;
+}
+
+#berry{
+    position: absolute;
+    width: 60px;
+    left: 25%;
+    top: 30%;
+    
+}
+
+#scallion{
+    position: absolute;
+    width: 80px;
+    left: 55%;
+    top: 50%;
+}
+
+#flower1{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    top: 5%;
+}
+
+#ok1{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    top: 5%;
+    visibility: hidden; 
+}
+
+#flower2{
+    position: absolute;
+    width: 100px;
+    right: 20px;
+    top: 50%;
+}
+
+#ok2{
+    position: absolute;
+    width: 100px;
+    right: 20px;
+    top: 50%;
+    visibility: hidden;
+}
+
+#arrowUP{
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    bottom: 1%;
+    transform: rotate(-90deg)
+}
+
+#arrowDown{
+    position: absolute;
+    width: 100px;
+    left: 140px;
+    bottom: 1%;
+    transform: rotate(90deg)
+}
+
+#arrowLeft{
+    position: absolute;
+    width: 100px;
+    left: 260px;
+    bottom: 1%;
+    transform: rotate(-180deg)
+}
+
+#arrowRight{
+    position: absolute;
+    width: 100px;
+    left: 380px;
+    bottom: 1%;
+}
+ let bee = document.getElementById("bee")
+ let nowPosLeft = bee.offsetLeft
+ let nowPosTop
+ let speed = 10
+ //all data Loaded
+ window.onload = function () {
+     nowPosleft = bee.offsetLeft
+     nowPosTop = bee.offsetTop
+     console.log("nowPosLeft=" + nowPosLeft);
+     console.log("nowPosLeft=" , nowPosLeft);
+ }
+
+
+  arrowUP.onclick = function () { 
+      if (nowPosTop - speed > 0) {
+          bee.style.top = (nowPosTop - speed) + "px"
+          nowPosTop = nowPosTop - speed
+      }
+}
+  arrowDown.onclick = function () { 
+      if (nowPosTop + speed < 430) {
+          bee.style.top = (nowPosTop + speed) + "px"
+          nowPosTop = nowPosTop + speed
+      }
+      arrowLeft.onclick = function() {
+          if (nowPosLeft-speed > 0)
+      }
+      <img id="ok1" src= "/res/51247ac2-6302-4538-bf8d-08c522940ed2/ok.png"/>
+       <img id="ok2" src= "/res/51247ac2-6302-4538-bf8d-08c522940ed2/ok.png"/>
+      
+      
